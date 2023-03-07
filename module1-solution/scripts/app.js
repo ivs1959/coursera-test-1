@@ -14,7 +14,7 @@
         }else{
           let ar = $scope.dishes.split(",");
           ar = ar.filter(ele => ele != "" && ele != " ");
-          $scope.message = (ar.length >0 ar.length <=3 &&) ? "Enjoy!":"Too much!";
+          $scope.message = (ar.length <=3  &&  ar.length >0) ? "Enjoy!":"Too much!";
         }
       }
 
